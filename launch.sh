@@ -4,8 +4,14 @@ calculate_accident_fall_point() {
   echo "0" > accident_fp.txt
 }
 
+simple_satellite_orbit() {
+  let ORBIT=10
+  let ORBIT=ORBIT*ORBIT
+}
+
 calculate_satellite_orbit() {
-  echo "0" > orbit.txt
+  simple_satellite_orbit
+  echo "$ORBIT" > orbit.txt
 }
 
 calculate_flight_time() {

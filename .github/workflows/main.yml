@@ -66,6 +66,18 @@ jobs:
          cd 02-git-tests
          ./check_cerry_pick.sh
       shell: bash
+  check_revert:    
+    runs-on: self-hosted
+    timeout-minutes: 1
+    container: kel.osll.ru:8083/docker/ubuntu:git-20.04
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run check_revert.sh
+      run: |
+         cp -r /__e/02-git-tests ./
+         cd 02-git-tests
+         ./check_revert.sh
+      shell: bash
   check_merge:    
     runs-on: self-hosted
     timeout-minutes: 1

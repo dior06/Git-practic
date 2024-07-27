@@ -4,10 +4,10 @@ calculate_accident_fall_point() {
   echo "0" > accident_fp.txt
 }
 
-simple_sattelite_orbit() {
-    let ORBIT=10
-    let ORBIT=ORBIT*ORBIT
-    let ORBIT=$ORBIT+1
+simple_satellite_orbit() {
+  let ORBIT=10
+  let ORBIT=ORBIT*ORBIT
+  let ORBIT=$ORBIT+1
 }
 
 calculate_satellite_orbit() {
